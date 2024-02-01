@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Momsberegner by Jimbo Slice</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Welcome to the momsberegner by Jimbo Slice!</h1>
+    <h2>
+      In the fields below, you can input the amount of money (in DKK) and the
+      moms percentage.
+      <br />
+      By default the value for moms is 25%, but you can change it to whatever
+      you wish.
+    </h2>
+    <div class="grid-1-1">
+      <div class="formDiv">
+        <form id="momsForm" method="post">
+          <div class="input-container">
+            <input
+              type="number"
+              name="beloeb"
+              id="beloeb"
+              placeholder="Beløb"
+              min="0"
+              step="0.000001"
+            />
+            <span class="Currency">DKK</span>
+          </div>
+          <div class="input-container">
+            <input
+              type="number"
+              name="moms"
+              id="moms"
+              placeholder="Moms"
+              min="0"
+              step="0.000001"
+            />
+            <span class="percent-sign">%</span>
+          </div>
+          <input type="submit" value="Calculate" />
+          <p id="result"></p>
+        </form>
+      </div>
+      <div class="JoakimVonAnd">
+        <img
+          src="https://imgproxy.jyllands-posten.dk/rbM8Zl6dDNT58Ji8s3uIzi-i1rId_2_XD-CRBb__zRM/resize:fill:940:0:0/plain/https%3A%2F%2Fbilleder.jyllands-posten.dk%2Fpictures%2Fimage%2F10082179%2F8nec44%2FALTERNATES%2Fmaster-3_2%2Fjoakim-i-tanken-jpg"
+          alt="Joakim von And with a wheelbarrow full of money"
+        />
+      </div>
+    </div>
+  </body>
+  <script src="script.js"></script>
+</html>
